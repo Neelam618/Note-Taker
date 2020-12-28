@@ -1,0 +1,20 @@
+.card{
+    height: 200px;
+}
+.card-text{
+
+    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 77px;
+}
+.modal-body{
+    overflow-wrap: anywhere;
+}
+pre{
+    white-space: break-spaces;
+}
+
