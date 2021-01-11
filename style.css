@@ -1,3 +1,15 @@
+.form, .title{
+   
+}
+.textarea{
+    line-height: 25px;
+}
+.addNotebtn{
+    width: 100px;
+}
+.noteTitle{
+    width: 400px;
+}
 .card{
     height: 200px;
 }
@@ -18,3 +30,14 @@ pre{
     white-space: break-spaces;
 }
 
+
+@media screen and (min-width:576px){
+    .form, .title{
+        
+    }
+}
+@media screen and (min-width:992px){
+    .form, .title{
+       
+    }
+}

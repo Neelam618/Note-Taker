@@ -8,15 +8,23 @@
     <title>Note Taker App</title>
 </head>
 <body>
-        <div class="container-fluid title">
-            <h1 class="my-3 text-left mx-auto w-50">Note Taker</h1>
-            <div id="error-msg-title" style="display: none; color: red">*Please add a note title</div>
-            <div id="error-msg-des" style="display: none; color: red">*Please add a note description</div>
-            <div class="w-50 text-left mx-auto">
-                <input type="text" class="w-75" id="inputtitle" placeholder="Note Title">
-                <textarea class="form-control mt-3" id="exampleFormControlTextarea1" rows="3" placeholder="Write your note here"></textarea>
+        <div class="container-fluid container-lg">
+            <h1 class="title my-3 text-center mx-auto">Note Taker</h1>
+            <div class="row text-left mx-auto">
+                <div class="row-md col-md col-sm-8 mx-0 mx-md-2 mx-lg-3 mx-xl-5" id="error-msg-title" style="display: none; color: red">*Please add a note title</div>
+                <div class="row-md col-md col-sm-8 mx-0 mx-md-2 mx-lg-3 mx-xl-5" id="error-msg-des" style="display: none; color: red">*Please add a note description</div>
+        </div>
+            <div class="form row text-left mx-auto">
+                <div class="col-md col-sm-8 mx-0 mx-md-2 mx-lg-3 mx-xl-5">
+                    <textarea class="textarea form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Write your note here"></textarea>
+                </div>
+                <div class="col-sm col-sm-4 mx-0 mx-md-2 mx-lg-3 mx-xl-5">
+                    <div class="row mx-auto">
+                        <div class="row mt-4 mt-sm-0"><input type="text" class="noteTitle" id="inputtitle" placeholder="Note Title"></div>
+                        <div class="row"><a href="#" class="btn addNotebtn btn-primary mt-3 mt-sm-5" id="addbtn">Add Note</a></div>
+                    </div>
+                </div>
             </div>
-            <a href="#" class="btn btn-primary my-3" id="addbtn">Add Note</a>
         </div>
     <hr>
         <div class="container-fluid">
