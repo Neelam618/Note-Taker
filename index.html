@@ -9,25 +9,27 @@
 </head>
 <body>
         <div class="container-fluid container-lg">
-            <h1 class="title my-3 text-center mx-auto">Note Taker</h1>
+            <div class="row text-left mx-auto">
+                <h1 class="title my-3 row-md col-md col-sm-8 mx-0 mx-md-2 mx-lg-3 mx-xl-5">Note Taker</h1>
+            </div>
             <div class="row text-left mx-auto">
                 <div class="row-md col-md col-sm-8 mx-0 mx-md-2 mx-lg-3 mx-xl-5" id="error-msg-title" style="display: none; color: red">*Please add a note title</div>
                 <div class="row-md col-md col-sm-8 mx-0 mx-md-2 mx-lg-3 mx-xl-5" id="error-msg-des" style="display: none; color: red">*Please add a note description</div>
         </div>
-            <div class="form row text-left mx-auto">
+            <div class="form row text-left mx-auto my-3">
                 <div class="col-md col-sm-8 mx-0 mx-md-2 mx-lg-3 mx-xl-5">
-                    <textarea class="textarea form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Write your note here"></textarea>
+                    <textarea class="textarea form-control" id="formControlTextarea" style="overflow: hidden; word-wrap: break-word; resize: none;" rows="3" placeholder="Write your note here"></textarea>
                 </div>
                 <div class="col-sm col-sm-4 mx-0 mx-md-2 mx-lg-3 mx-xl-5">
                     <div class="row mx-auto">
                         <div class="row mt-4 mt-sm-0"><input type="text" class="noteTitle" id="inputtitle" placeholder="Note Title"></div>
-                        <div class="row"><a href="#" class="btn addNotebtn btn-primary mt-3 mt-sm-5" id="addbtn">Add Note</a></div>
+                        <div class="row mt-4"><a href="#" class="btn addNotebtn btn-primary mt-3 mt-sm-8" id="addbtn">Add Note</a></div>
                     </div>
                 </div>
             </div>
         </div>
-    <hr>
-        <div class="container-fluid">
+
+        <div class="container-fluid container-lg my-5">
             <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4" id="row"></div>
         </div>
 

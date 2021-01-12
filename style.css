@@ -1,17 +1,56 @@
-.form, .title{
-   
+body{
+	background-color: #9cf016;
 }
 .textarea{
     line-height: 25px;
 }
+#formControlTextarea{
+	/* width:500px; */
+	overflow:hidden;
+	background-color:rgb(207, 194, 194);
+	color:#222;
+	/* font-family:Courier, monospace; */
+	/* font-weight:normal; */
+	/* font-size:24px; */
+	resize:none;
+	line-height:40px;
+	padding-left:100px;
+	padding-right:40px;
+	/* padding-top:45px; */
+	padding-bottom:34px;
+	background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+	background-repeat:repeat-y, repeat;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	-webkit-box-shadow: 0px 2px 14px rgb(69, 134, 26);
+	box-shadow: 0px 2px 14px rgb(69, 134, 26);
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #FFF;
+}
 .addNotebtn{
-    width: 100px;
+	width: 100px;
+	background-color: #f37121;
+	border: none;
+	border-radius: 12px;
 }
 .noteTitle{
-    width: 400px;
+	width: 400px;
+	border: none;
+	border-bottom: 2px solid black;
+	background-color: #9cf016;
+	color: black;
+	font-weight: 500;
+}
+.noteTitle:focus{
+	outline: none;
 }
 .card{
-    height: 200px;
+	height: 200px;
+	border-radius: 15px;
+	border: none;
+	-webkit-box-shadow: 0px 2px 14px rgb(69, 134, 26);
+	box-shadow: 0px 2px 14px rgb(69, 134, 26);
+
 }
 .card-text{
 
@@ -22,6 +61,17 @@
     overflow: hidden;
     text-overflow: ellipsis;
     height: 77px;
+}
+.viewDetail{
+	background-color: #f37121;
+	border: none;
+	border-radius: 15px;
+}
+.viewDetail:hover{
+	background-color: #ac4200;
+}
+.deletebtn{
+	border-radius: 15px;
 }
 .modal-body{
     overflow-wrap: anywhere;

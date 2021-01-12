@@ -75,7 +75,7 @@ function createNoteCard(inputTitleValue, inputDesValue){
     cardText.innerText = inputDesValue;
 
     let detailBtn = document.createElement('button');
-    detailBtn.className = 'btn btn-primary';
+    detailBtn.className = 'btn btn-primary viewDetail';
     detailBtn.innerText = 'View detail';
     detailBtn.setAttribute("data-bs-toggle", "modal");
     detailBtn.setAttribute("data-bs-target", "#exampleModal");
