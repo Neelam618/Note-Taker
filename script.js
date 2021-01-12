@@ -7,7 +7,7 @@ focusInput();
 
 //click add button on keyboard enter
 // Execute a function when the user releases a key on the keyboard
-document.getElementById('exampleFormControlTextarea1').addEventListener("keyup", function(event) {                                //you can also remove event parameter and it works
+document.getElementById('formControlTextarea').addEventListener("keyup", function(event) {                                //you can also remove event parameter and it works
     // Number 13 is the "Enter" key on the keyboard
     if(event.keyCode === 13){                                   
     // Trigger the add button element with a click
@@ -25,7 +25,7 @@ function verifyAndDisplay(){
     titleErrorMsg.style.display = "none";
 
     let inputTitleValue = document.getElementById('inputtitle').value;
-    let inputDesValue = document.getElementById('exampleFormControlTextarea1').value;
+    let inputDesValue = document.getElementById('formControlTextarea').value;
 
     if(!inputTitleValue){
         titleErrorMsg.style.display = "block";
@@ -44,10 +44,10 @@ function verifyAndDisplay(){
 function displayNote(){
 
     let valueFromTitleInput = document.getElementById('inputtitle').value;
-    let valueFromDesInput = document.getElementById('exampleFormControlTextarea1').value;
+    let valueFromDesInput = document.getElementById('formControlTextarea').value;
  
     document.getElementById('row').appendChild(createNoteCard(valueFromTitleInput, valueFromDesInput));
-    document.getElementById('exampleFormControlTextarea1').value = "";
+    document.getElementById('formControlTextarea').value = "";
     document.getElementById('inputtitle').value = "";
 
     storeNoteText(valueFromTitleInput, valueFromDesInput);
