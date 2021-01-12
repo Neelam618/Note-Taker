@@ -44,6 +44,9 @@ body{
 	border: none;
 	border-radius: 12px;
 }
+.addNotebtn:hover{
+	background-color: #c24b01;
+}
 .noteTitle{
 	width: 400px;
 	border: none;
@@ -59,13 +62,10 @@ body{
 	height: 200px;
 	border-radius: 15px;
 	border: none;
-	-webkit-box-shadow: 0px 2px 14px rgb(69, 134, 26);
-	box-shadow: 0px 2px 14px rgb(69, 134, 26);
+	-webkit-box-shadow: 0px 2px 14px black;
+	box-shadow: 0px 2px 14px black;
 
 }
-/* .card-title{
-	font-size: 1.3rem;
-} */
 .card-text{
 
     white-space: nowrap;
@@ -77,15 +77,21 @@ body{
     height: 77px;
 }
 .viewDetail{
-	background-color: #f37121;
+	background-color: #ffe1ae;
+	padding: 5px 10px;
+	color: black;
 	border: none;
 	border-radius: 15px;
 }
 .viewDetail:hover{
-	background-color: #ac4200;
+	background-color: #ffc869;
+	color: black;
 }
 .deletebtn{
 	border-radius: 15px;
+	border: none;
+	background-color: #6f2c32;
+	padding: 5px 10px;
 }
 .modal-body{
     overflow-wrap: anywhere;
@@ -93,7 +99,6 @@ body{
 pre{
     white-space: break-spaces;
 }
-
 
 @media screen and (min-width:576px){
     .form, .title{
