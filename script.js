@@ -75,14 +75,14 @@ function createNoteCard(inputTitleValue, inputDesValue){
     cardText.innerText = inputDesValue;
 
     let detailBtn = document.createElement('button');
-    detailBtn.className = 'btn btn-primary viewDetail';
+    detailBtn.className = 'btn viewDetail';
     detailBtn.innerText = 'View detail';
     detailBtn.setAttribute("data-bs-toggle", "modal");
     detailBtn.setAttribute("data-bs-target", "#exampleModal");
     detailBtn.addEventListener('click', viewModal);
 
     let deleteBtn = document.createElement('button');
-    deleteBtn.className = 'deletebtn btn btn-danger mx-2';
+    deleteBtn.className = 'deletebtn btn mx-2';
     deleteBtn.innerText = 'Delete';
     deleteBtn.id = 'deleteBtn' + document.getElementsByClassName('card').length;;
     deleteBtn.addEventListener('click', deleteNote);
