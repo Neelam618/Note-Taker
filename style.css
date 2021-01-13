@@ -43,11 +43,9 @@ body{
 .noteTitle::-webkit-input-placeholder{
 	color: white;
 }
-.textarea{
-	line-height: 25px;
-	
-}
 #formControlTextarea{
+	overflow: auto; 
+	word-wrap: break-word;
 	color:#222;
 	line-height:40px;
 	padding-left:100px;
@@ -57,16 +55,15 @@ body{
 	background-image:url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png);
 	background-repeat:repeat-y;
 	-webkit-border-radius:12px;
-	border-radius:12px;
+	border-radius:13px;
 	-webkit-box-shadow: 0px 0px 12px 14px black;
 	box-shadow: 0px 0px 12px 14px black;
-	border-top:1px solid #FFF;
-	border-bottom:1px solid #FFF;
+	border: 5px solid black;
 }
 textarea::-webkit-resizer {
 	border-width: 9px;
   	border-style: solid;
-  	border-color: transparent black black transparent;
+  	border-color: transparent #1b0000 #1b0000 transparent;
 }
 
 .addNotebtn{
@@ -98,7 +95,6 @@ textarea::-webkit-resizer {
 	border: none;
 	-webkit-box-shadow: 0px 2px 14px black;
 	box-shadow: 0px 2px 14px black;
-
 }
 .card-text{
 
@@ -139,16 +135,27 @@ pre.modal-text{
 	font-family: 'Maven Pro', sans-serif;
 
 }
+@media screen and (max-width:530px){
+	.noteTitle{
+		width: 250px;
+	}
+	#formControlTextarea{
+		background-image: none;
+		padding: 15px;
+		line-height: 1.8;
+	}
+ }
 
-@media screen and (min-width:576px){
-
-}
 @media screen and (min-width:992px){
-   
+	.textarea{
+		width: 50%;
+		margin: 0 auto;
+	}
 }
+
 @media screen and (max-width:444px){
 	#formControlTextarea{
-		background-image:url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
-		padding: 20px;
+		/* background-image: 
+		padding: 20px; */
 	}
 }
