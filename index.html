@@ -10,30 +10,21 @@
     <title>Note Taker App</title>
 </head>
 <body>
-        <div class="container-fluid container-lg form-container">
-            <div class="row text-left mx-auto">
-                <h1 class="title my-3 row-md col-md col-sm-8 mx-0 mx-md-2 mx-lg-3 mx-xl-5">Note Taker</h1>
-            </div>
-            <div class="row text-left mx-auto">
-                <div class="row-md col-md col-sm-8 mx-0 mx-md-2 mx-lg-3 mx-xl-5" id="error-msg-title" style="display: none; color: red">*Please add a note title</div>
-                <div class="row-md col-md col-sm-8 mx-0 mx-md-2 mx-lg-3 mx-xl-5" id="error-msg-des" style="display: none; color: red">*Please add a note description</div>
+    <div class=" container form-container w-50 mx-auto">
+        <h1 class="title my-5 text-center">Note Taker</h1>
+        <div class="w-50">
+            <div class="mt-5 text-left mx-auto"><input type="text" class="noteTitle" id="inputtitle" placeholder="Note Title" maxlength="18"></div>
+            <div class="error-msg-title mt-1" id="error-msg-title" style="display: none; color: red">*Please add a note title</div>
         </div>
-            <div class="form row text-left mx-auto my-3">
-                <div class="col-md col-sm-8 mx-0 mx-md-2 mx-lg-3 mx-xl-5">
-                    <textarea class="textarea form-control" id="formControlTextarea" style="overflow: hidden; word-wrap: break-word; resize: none;" rows="3" placeholder="Write your note here"></textarea>
-                </div>
-                <div class="col-sm col-sm-4 mx-0 mx-md-2 mx-lg-3 mx-xl-5">
-                    <div class="row mx-auto">
-                        <div class="row mt-4 mt-sm-0"><input type="text" class="noteTitle" id="inputtitle" placeholder="Note Title" maxlength="18"></div>
-                        <div class="row mt-4"><a href="#" class="btn addNotebtn mt-3 mt-sm-8" id="addbtn">Add Note</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <textarea class="textarea form-control mt-4" id="formControlTextarea" style="overflow: auto; word-wrap: break-word;" rows="4" placeholder="Write your note here"></textarea>
+        <div class="mt-2" id="error-msg-des" style="display: none; color: red">*Please add a note description</div>
+        
+        <div class="text-center"><a href="#" class="btn addNotebtn mt-4" id="addbtn">Add Note</a></div>
+    </div>
 
-        <div class="container-fluid container-lg my-5">
-            <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4" id="row"></div>
-        </div>
+    <div class="container-fluid container-lg my-5">
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4" id="row"></div>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
