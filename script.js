@@ -91,8 +91,8 @@ function viewModal(event){
     let paraText = event.target.previousElementSibling.innerText;
     let titleText = event.target.parentNode.firstChild.innerText;
 
-    document.getElementsByClassName('modal-title')[0].innerHTML = titleText;
-    document.getElementsByClassName('modal-text')[0].innerHTML = paraText;
+    document.getElementsByClassName('modal-title')[0].innerText = titleText;
+    document.getElementsByClassName('modal-text')[0].innerText = paraText;
 }
 
 function deleteNote(event){
