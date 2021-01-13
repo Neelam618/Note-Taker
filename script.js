@@ -11,6 +11,7 @@ function verifyAndDisplay(){
     
     let titleErrorMsg = document.getElementById('error-msg-title');
     let desErrorMsg = document.getElementById('error-msg-des');
+
     desErrorMsg.style.display = "none";
     titleErrorMsg.style.display = "none";
 
@@ -19,11 +20,13 @@ function verifyAndDisplay(){
 
     if(!inputTitleValue){
         titleErrorMsg.style.display = "block";
+        focusInput();
         return;
     }
 
     if(!inputDesValue){
         desErrorMsg.style.display = "block";
+        document.getElementById('formControlTextarea').focus();
         return;
     }
 
