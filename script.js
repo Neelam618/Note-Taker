@@ -126,6 +126,7 @@ function storeNoteText(noteTitle, noteDes){
     localStorage.setItem("items", JSON.stringify(notes));
 
 }
+
 function retrieveNoteText(){
 
     let itemsfromLS = JSON.parse(localStorage.getItem('items'));
